@@ -45,7 +45,7 @@ export default function FeatureSection() {
 
       {/* Section Header */}
       <h1 className="font-display text-[32px] leading-[40px] text-center text-white">
-        Key Features of PowerPlay
+        Key Features of APT-Casino
       </h1>
 
       {/* Features Grid */}
@@ -54,17 +54,17 @@ export default function FeatureSection() {
         <div id="first-col">
           <h2 className="text-dark-kiss text-sm font-semibold">Overview</h2>
           <h1 className="text-white my-5 text-[32px] leading-[40px] font-bold">
-            Traditional Casinos vs PowerPlay
+            Traditional Casinos vs APT-Casino
           </h1>
           <p className="text-white/[0.6] font-medium leading-relaxed">
             Traditional online casinos often lack transparency, leaving players
             to trust platforms without proof of fairness. Common issues include
-            rigged games, hidden terms, and restrictive policies. PowerPlay
-            leverages Citrea blockchain to provide a transparent, provably fair
+            rigged games, hidden terms, and restrictive policies. APT-Casino
+            leverages Nibiru blockchain to provide a transparent, provably fair
             gaming experience. Key features include:
           </p>
           <ul className="list-disc pl-6 text-white/[0.6] mt-4 font-medium">
-            <li>Community Leaderboard: Compete and view top players' achievements.</li>
+            <li>Staking & Yield Farming: Earn passive income by staking in liquidity pools while playing games.</li>
             <li>Profile Exploration: Explore player profiles, activities, and ENS.</li>
           </ul>
         </div>
@@ -77,21 +77,22 @@ export default function FeatureSection() {
               Transparent and Fully On-Chain GambleFi
             </h2>
             <p className="text-white">
-              PowerPlay ensures transparency with fully on-chain randomness
+            APT-Casino ensures transparency with fully on-chain randomness
               using our VRF module, guaranteeing verifiably fair outcomes for
               every game.
             </p>
           </div>
 
           <div className="border border-[#E504983D] p-5 flex flex-col gap-3 inner-purple-shadow rounded-xl">
-            <h2 className="text-dark-kiss text-sm font-semibold">DeFi Integration</h2>
+            <h2 className="text-dark-kiss text-sm font-semibold">Cross-Chain Liquidity:</h2>
             <p className="text-white">
-              Cross-chain lending enables token deposits on supported chains as
-              collateral to borrow CBTC, ensuring seamless gameplay without selling assets.
+            Users can stake Euclid tokens in virtual liquidity pools to earn Nibiru tokens, which are used for betting, gaming, and rewards. (Nibiru Tokens are equivalent to in-game currency token APTC)
+
             </p>
             <ul className="list-disc pl-6 text-white mt-2">
+              <li>Leverages Euclid Protocol’s unified liquidity to eliminate slippage and ensure efficient gameplay across multiple chains.
               <li>Real-time asset prices for accurate lending calculations.</li>
-              <li>Effortless cross-chain asset transfers.</li>
+              </li>
             </ul>
           </div>
 

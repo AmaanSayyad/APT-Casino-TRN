@@ -18,11 +18,11 @@ export default function Page() {
         />
         <div className="w-full justify-end font-display flex py-5">
           <div className="flex items-center px-3 flex-col border-r">
-            <h5 className="text-sm">TOTAL CBTC POOL</h5>
+            <h5 className="text-sm">TOTAL APTC POOL</h5>
             <span className="text-xl text-sharp-purple">203,746</span>
           </div>
           <div className="flex items-center px-3 flex-col">
-            <h5 className="text-sm">CBTC</h5>
+            <h5 className="text-sm">APTC</h5>
             <span className="text-xl text-sharp-purple">APY 6.03%</span>
           </div>
           <div className=" w-1/12 flex items-end justify-center">
@@ -39,15 +39,10 @@ export default function Page() {
                 <div className="flex  flex-col gap-3">
                   <h5 className="text-xl font-sans">CURRENT</h5>
                   <span className="flex items-center mb-5 gap-1">
-                    <Image
-                      src="/images/Polygon.png"
-                      width={35}
-                      height={35}
-                      alt="polygon"
-                    />
+
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      (Amoy Testnet)
+                      (Euclid Testnet)
                     </p>
                   </span>
                   <div>
@@ -73,15 +68,10 @@ export default function Page() {
                 <div className="flex  flex-col gap-3">
                   <h5 className="text-xl font-sans">CURRENT</h5>
                   <span className="flex items-center mb-5 gap-1">
-                    <Image
-                      src="/images/Avax.png"
-                      width={35}
-                      height={35}
-                      alt="polygon"
-                    />
+                    
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      (Fuji Testnet)
+                      (Nibiru Testnet)
                     </p>
                   </span>
                   <div>
@@ -118,13 +108,8 @@ export default function Page() {
                 <tr className="col-span-full h-0.5 w-full"></tr>
                 <tr className="">
                   <td className="flex py-4 gap-3 pl-10">
-                    <Image
-                      src="/images/Polygon.png"
-                      width={24}
-                      height={24}
-                      alt="polygon"
-                    />
-                    MATIC (Amoy testnet)
+                   
+                    NIBI (Nibiru testnet)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>
@@ -136,13 +121,8 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    <Image
-                      src="/images/Polygon.png"
-                      width={24}
-                      height={24}
-                      alt="polygon"
-                    />
-                    MATIC (Amoy testnet)
+                    
+                    NIBI (Nibiru testnet)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>
@@ -154,13 +134,8 @@ export default function Page() {
                 </tr>
                 <tr className="py-4">
                   <td className="flex py-4 gap-3 pl-10">
-                    <Image
-                      src="/images/Polygon.png"
-                      width={24}
-                      height={24}
-                      alt="polygon"
-                    />
-                    MATIC (Amoy testnet)
+                    
+                    NIBI (Nibiru testnet)
                   </td>
                   <td className="px-5">$0.93</td>
                   <td>0.22</td>

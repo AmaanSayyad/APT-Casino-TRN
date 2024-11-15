@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 // import { headers } from "next/headers";
 import AiModal from "@/components/AiModal";
 export const metadata = {
-  title: "PowerPlay",
+  title: "APT-Casino",
   description: "Web3 gaming arena",
 };
 import Providers from "./providers";
