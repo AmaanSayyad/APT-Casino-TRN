@@ -5,33 +5,33 @@ import { DynamicWagmiConnector } from "@dynamic-labs/wagmi-connector";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { mainnet } from "viem/chains";
 import { createConfig, WagmiProvider,http } from "wagmi";
-const citreaChain = {
+const nibiChain = {
   id: 5115,
-  name: "Citrea Testnet",
-  nativeCurrency: { name: "Citrea Testnet", symbol: "CBTC", decimals: 18 },
+  name: "Nibiru Testnet-1",
+  nativeCurrency: { name: "Nibiru Testnet-1", symbol: "NIBI", decimals: 18 },
   rpcUrls: {
-    default: { http: ["https://rpc.testnet.citrea.xyz"] },
+    default: { http: ["https://evm-rpc.testnet-1.nibiru.fi"] },
   },
   blockExplorers: {
-    default: { name: "Testnet", url: "https://explorer.testnet.citrea.xyz/" },
+    default: { name: "Testnet", url: "" },
   },
 };
 const evmNetworks = [
   {
-    blockExplorerUrls: ["https://explorer.testnet.citrea.xyz/"],
-    chainId: 5115,
-    chainName: "Citrea Testnet",
+    blockExplorerUrls: [""],
+    chainId: 7210,
+    chainName: "Nibiru Testnet-1",
     iconUrls: ["https://app.dynamic.xyz/assets/networks/eth.svg"],
-    name: "Citrea",
+    name: "Nibiru",
     nativeCurrency: {
       decimals: 18,
-      name: "Citrea Testnet",
-      symbol: "CBTC",
+      name: "Nibiru Testnet-1",
+      symbol: "nibi",
       iconUrl: "https://app.dynamic.xyz/assets/networks/eth.svg",
     },
-    networkId: 5115,
-    rpcUrls: ["https://rpc.testnet.citrea.xyz"],
-    vanityName: "Citrea Testnet",
+    networkId: 7210,
+    rpcUrls: [""],
+    vanityName: "Nibiru Testnet-1",
   },
   {
     blockExplorerUrls: ['https://etherscan.io/'],
@@ -86,11 +86,11 @@ const evmNetworks = [
 ];
 const queryClient = new QueryClient();
 const config = createConfig({
-  chains: [mainnet, citreaChain],
+  chains: [mainnet, nibiChain],
   multiInjectedProviderDiscovery: false,
   transports: {
     [mainnet.id]: http(),
-    [citreaChain.id]: http(),
+    [nibiChain.id]: http(),
   },
 });
 export default function Providers({ children }) {

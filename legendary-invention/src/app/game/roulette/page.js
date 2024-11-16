@@ -25,7 +25,8 @@ import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { muiStyles } from './styles';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer'; 
-
+import MuiAlert from '@mui/material/Alert';
+import Snackbar from '@mui/material/Snackbar';
 
 const TooltipWide = styled(({ className, ...props }) => (
 	<Tooltip {...props} classes={{ popper: className }} />
@@ -211,6 +212,9 @@ const eventReducer = (state, action) => {
 			return state
 	}
 }
+const Alert = React.forwardRef(function Alert(props, ref) {
+	return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 export default function GameRoulette() {
 	const [events, dispatchEvents] = useReducer(eventReducer, [])
@@ -239,6 +243,14 @@ export default function GameRoulette() {
 
 	const [balance, setBalance] = useState(-1)
 
+	const [notificationIndex, setNotificationIndex] = useState(0);
+	const [showNotification, setShowNotification] = useState(false);
+	const [notificationMessages] = useState([
+		"Placing Bet...",
+		"Bet Placed Successfully!",
+		"You won 4 tokens!"
+	]);
+
 	const winningsListener = useMemo(() => {
 		return publicMumbaiClient.watchContractEvent({
 			address: rouletteContractAddress,
@@ -255,6 +267,31 @@ export default function GameRoulette() {
 	const handleBetChange = (e) => {
 		setBet(parseFloat(e.target.value));
 	}
+
+	// Function to handle "Place Bet" sequence
+	const handlePlaceBet = () => {
+		setNotificationIndex(0); // Start from the first notification
+		setShowNotification(true);
+
+		const interval = setInterval(() => {
+			setNotificationIndex((prevIndex) => {
+				if (prevIndex < notificationMessages.length - 1) {
+					return prevIndex + 1;
+				} else {
+					clearInterval(interval); // Clear interval once all notifications are shown
+					return prevIndex;
+				}
+			});
+		}, 2000); // 2 seconds interval
+	};
+
+
+	// Function to close the notification
+	const handleCloseNotification = () => {
+		setShowNotification(false);
+		setNotificationIndex(0);
+	};
+
 
 	const getBetArray = () => {
 		let outputArr = new Array(157).fill(0) // total amount
@@ -674,7 +711,7 @@ export default function GameRoulette() {
 										{submitDisabled && rollResult < 0 && <Typography color='text.secondary'>Die being rolled, please wait...</Typography>}
 									</Box> :
 									<Box sx={{ display: 'flex', flexDirection: 'column' }}>
-										<Button onClick={() => switchNetwork()}>Switch Network</Button>
+										<Button onClick={() => switchNetwork()}>Place Bet</Button>
 									</Box>
 								)
 							}

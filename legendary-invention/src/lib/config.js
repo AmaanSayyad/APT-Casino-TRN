@@ -9,18 +9,18 @@ import {
 } from "@rainbow-me/rainbowkit";
 const projectId = `64df6621925fa7d0680ba510ac3788df`;
 
-export const citreaChain = {
+export const nibiChain = {
   id: 5115,
-  name: "Citrea Testnet",
-  nativeCurrency: { name: "Citrea Testnet", symbol: "CBTC", decimals: 18 },
+  name: "Nibiru Testnet-1",
+  nativeCurrency: { name: "Nibiru Testnet-1", symbol: "NIBI", decimals: 18 },
   rpcUrls: {
-    default: { http: ["https://rpc.testnet.citrea.xyz"] },
+    default: { http: ["https://evm-rpc.testnet-1.nibiru.fi"] },
   },
   blockExplorers: {
-    default: { name: "Testnet", url: "https://explorer.testnet.citrea.xyz/" },
+    default: { name: "Nibiru Testnet-1", url: "" },
   },
 };
-const supportedChains = [mainnet, polygon, citreaChain];
+const supportedChains = [mainnet, polygon, nibiChain];
 export const config = getDefaultConfig({
   appName: "PowerPlay",
   projectId,
