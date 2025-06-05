@@ -78,7 +78,7 @@ At APT-Casino, we prioritize security and fairness:
 
 ## 💼 Business Model
 
-BetBlock operates on a sustainable business model:
+APT-Casino operates on a sustainable business model:
 
 - Small house edge on games (1-3%)
 - NFT marketplace fees
@@ -87,7 +87,7 @@ BetBlock operates on a sustainable business model:
 
 ## 🌐 Community & Governance
 
-BetBlock is community-centric:
+APT-Casino is community-centric:
 
 - Active Discord and Telegram communities
 - Regular updates and transparent development
@@ -104,10 +104,9 @@ BetBlock is community-centric:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/betblock.git
+git clone https://github.com/AmaanSayyad/APT-Casino-TRN
 
 # Install dependencies
-cd betblock
 npm install
 
 # Start the development server
