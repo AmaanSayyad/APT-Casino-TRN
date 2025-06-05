@@ -1,14 +1,12 @@
-# BetBlock - Decentralized Gaming on TRN Network
+# APT-Casino - Decentralized Gaming on TRN Network
 
-![BetBlock Logo](public/images/logo.png)
-
-BetBlock is a revolutionary decentralized gaming platform built on TRN Network that combines GameFi and DeFi into a transparent, fair, and engaging user experience. Our mission is to provide a safe, secure, and transparent multiplayer platform that respects its users while delivering immersive gaming experiences.
+APT-Casino is a revolutionary decentralized gaming platform built on TRN Network that combines GameFi and DeFi into a transparent, fair, and engaging user experience. Our mission is to provide a safe, secure, and transparent multiplayer platform that respects its users while delivering immersive gaming experiences.
 
 ## 🌟 The Origin Story
 
-BetBlock was born out of a real experience with traditional gambling platforms. One of our team members encountered a deceptive "200% bonus" offer on a centralized casino platform that came with hidden wager requirements, making it nearly impossible to withdraw funds. After losing their deposit due to these hidden terms, they were inspired to create something better.
+APT-Casino was born out of a real experience with traditional gambling platforms. One of our team members encountered a deceptive "200% bonus" offer on a centralized casino platform that came with hidden wager requirements, making it nearly impossible to withdraw funds. After losing their deposit due to these hidden terms, they were inspired to create something better.
 
-BetBlock aims to solve this problem by leveraging blockchain technology to ensure complete transparency, fairness, and true ownership for all players.
+APT-Casino aims to solve this problem by leveraging blockchain technology to ensure complete transparency, fairness, and true ownership for all players.
 
 ## 🎮 Core Features
 
@@ -19,7 +17,7 @@ BetBlock aims to solve this problem by leveraging blockchain technology to ensur
 
 ### Innovative DeFi Integration
 - **Multi-Token Gas Economy**: Pay transaction fees with different tokens (ROOT or GAME tokens)
-- **NFT Rewards System**: Earn collectible NFTs with real utility in the BetBlock ecosystem
+- **NFT Rewards System**: Earn collectible NFTs with real utility in the APT-Casino ecosystem
 - **FuturePass Wallet Integration**: Seamless, user-friendly wallet experience
 
 ### AI-Enhanced Gaming
@@ -36,7 +34,7 @@ BetBlock aims to solve this problem by leveraging blockchain technology to ensur
 
 ## 💰 Tokenomics
 
-- **$GAME Token**: The primary utility token of the BetBlock ecosystem
+- **$GAME Token**: The primary utility token of the APT-Casino ecosystem
 - **NFT Collectibles**: Rare, tradable assets that provide in-game advantages
 - **Daily Rewards**: Earn tokens and NFTs through active participation
 - **Achievement System**: Complete challenges to earn special rewards
@@ -71,7 +69,7 @@ BetBlock aims to solve this problem by leveraging blockchain technology to ensur
 
 ## 🔒 Security & Fairness
 
-At BetBlock, we prioritize security and fairness:
+At APT-Casino, we prioritize security and fairness:
 
 - All smart contracts are audited for security vulnerabilities
 - Game outcomes are verifiable on-chain
@@ -96,16 +94,6 @@ BetBlock is community-centric:
 - Future DAO governance for platform decisions
 - Community rewards for active participation
 
-## 📋 Getting Started
-
-To start using BetBlock:
-
-1. Visit our platform at [betblock.trn](https://betblock.trn)
-2. Connect your FuturePass wallet
-3. Claim your daily rewards
-4. Play games and earn tokens and NFTs
-5. Join our community to stay updated
-
 ## 🧪 Development
 
 ### Prerequisites
@@ -125,22 +113,3 @@ npm install
 # Start the development server
 npm run dev
 ```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more information.
-
-## 📄 License
-
-BetBlock is licensed under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-- Website: [betblock.trn](https://betblock.trn)
-- Email: team@betblock.trn
-- Discord: [BetBlock Community](https://discord.gg/betblock)
-- Twitter: [@BetBlockTRN](https://twitter.com/BetBlockTRN)
-
----
-
-Built with ❤️ by the BetBlock Team on TRN Network 
