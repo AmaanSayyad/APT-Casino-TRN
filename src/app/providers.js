@@ -50,11 +50,11 @@ const pharosDevnet = {
   testnet: true,
 };
 
-// TRN Network
-const trnNetwork = {
-  id: parseInt(TRN_CONFIG.chainId, 16),
+// ROOT Porcini Testnet
+const rootPorcini = {
+  id: 7672,
   name: TRN_CONFIG.chainName,
-  network: "trn-network",
+  network: "root-porcini",
   nativeCurrency: {
     decimals: TRN_CONFIG.nativeCurrency.decimals,
     name: TRN_CONFIG.nativeCurrency.name,
@@ -65,9 +65,12 @@ const trnNetwork = {
     public: { http: [TRN_CONFIG.rpcUrl] },
   },
   blockExplorers: {
-    default: { name: "TRN Explorer", url: "https://explorer.trn.network" },
+    default: { 
+      name: TRN_CONFIG.explorer.name, 
+      url: TRN_CONFIG.explorer.url 
+    },
   },
-  testnet: false,
+  testnet: true,
 };
 
 // WalletConnect project ID
@@ -75,17 +78,17 @@ const fallbackProjectId = "3a8170812b534d0ff9d794f19a901d64";
 const projectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID || fallbackProjectId;
 
 const config = getDefaultConfig({
-  appName: 'APT Casino on TRN',
+  appName: 'APT-Casino on ROOT Network',
   projectId,
-  chains: [trnNetwork, mantleSepolia, pharosDevnet],
+  chains: [rootPorcini, mantleSepolia, pharosDevnet],
   transports: {
-    [trnNetwork.id]: http(trnNetwork.rpcUrls.default.http[0]),
+    [rootPorcini.id]: http(rootPorcini.rpcUrls.default.http[0]),
     [mantleSepolia.id]: http(mantleSepolia.rpcUrls.default.http[0]),
     [pharosDevnet.id]: http(pharosDevnet.rpcUrls.default.http[0]),
   },
   metadata: {
-    name: 'APT Casino on TRN',
-    description: 'Casino DApp on TRN Network',
+    name: 'APT-Casino on ROOT Network',
+    description: 'Casino DApp on ROOT Network',
     url: 'http://localhost:3000',
     icons: ['https://yourdomain.com/icon.png'],
   },

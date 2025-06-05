@@ -1,14 +1,14 @@
 // TRN Network Configuration
 export const TRN_CONFIG = {
   // Network details
-  chainId: '0xTRN', // Replace with actual TRN chainId
-  chainName: 'TRN Network',
-  rpcUrl: 'https://rpc.trn.network', // Replace with actual RPC URL
+  chainId: '0x1DF8', // 7672 in hex
+  chainName: 'ROOT Porcini Testnet',
+  rpcUrl: 'https://porcini.rootnet.app/archive', // Updated RPC URL
   
   // Native token details
   nativeCurrency: {
-    name: 'ROOT',
-    symbol: 'ROOT',
+    name: 'XRP',
+    symbol: 'XRP',
     decimals: 18,
   },
   
@@ -29,10 +29,10 @@ export const TRN_CONFIG = {
   feePallet: {
     supportedTokens: [
       { 
-        symbol: 'ROOT', 
+        symbol: 'XRP', 
         address: '0x0000000000000000000000000000000000000000', // Native token
         decimals: 18,
-        logo: '/images/tokens/root.png',
+        logo: '/images/tokens/xrp.png',
       },
       {
         symbol: 'GAME',
@@ -42,6 +42,12 @@ export const TRN_CONFIG = {
       },
       // Add more supported tokens as needed
     ],
+  },
+  
+  // Explorer URL
+  explorer: {
+    url: 'https://porcini.rootscan.io',
+    name: 'Rootscan Explorer',
   },
 }
 
