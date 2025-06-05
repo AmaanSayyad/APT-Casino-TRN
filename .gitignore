@@ -1,0 +1,97 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+/web3-contracts/node_modules
+
+# Testing
+/coverage
+/coverage.json
+/.nyc_output
+
+# Next.js
+/.next/
+/out/
+/.next-*
+.next/
+
+# Production
+/build
+/dist
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE and editor files
+/.idea
+/.vscode
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Hardhat files
+/web3-contracts/cache
+/web3-contracts/artifacts
+/web3-contracts/typechain
+/web3-contracts/typechain-types
+
+# Ignition
+/web3-contracts/ignition/deployments/chain-31337
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.backup
+
+# Logs
+logs
+*.log
+
+# Custom build files
+fix_mineshistory.sh
+replace_text.js
+
+# Backup files
+*.bak
+*.bak[0-9]
+*.bak[0-9][0-9]
+*.backup
+*.backup[0-9]
+*.backup[0-9][0-9]
+*.backup[0-9][0-9][0-9]
+*.tmp
+*.temp
+*.orig 
