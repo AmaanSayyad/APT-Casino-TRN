@@ -204,7 +204,7 @@ export default function Bank() {
         {showNetworkBanner && (
           <div className="bg-gradient-to-r from-red-magic/80 to-blue-magic/80 py-2 px-4 text-center relative mb-8 rounded-lg">
             <p className="text-white text-sm">
-              Connected to {chainId === 5003 ? 'Mantle Sepolia Testnet' : chainId === 50002 ? 'Pharos Devnet' : 'Unknown Network'}. 
+              Connected to {chainId === 5003 ? 'Testnet' : chainId === 50002 ? 'Pharos Devnet' : 'Unknown Network'}. 
               <button className="underline ml-2">Switch Network</button>
             </p>
             <button 
