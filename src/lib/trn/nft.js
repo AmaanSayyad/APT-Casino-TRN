@@ -1,3 +1,5 @@
+"use client";
+
 import { TRN_CONFIG, GAME_REWARDS } from './config';
 import { futurePassWallet } from './futurePass';
 
@@ -47,7 +49,7 @@ export class NFTManager {
    * @param {string} gasToken Token to use for gas payment
    * @returns {Promise<Object>} Minted NFT details
    */
-  async mintRewardNFT(tokenURI, rarity, gasToken = 'ROOT') {
+  async mintRewardNFT(tokenURI, rarity, gasToken = 'XRP') {
     try {
       if (!futurePassWallet.isWalletConnected()) {
         throw new Error('Wallet not connected');

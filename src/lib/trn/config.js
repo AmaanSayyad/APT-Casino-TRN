@@ -32,13 +32,13 @@ export const TRN_CONFIG = {
         symbol: 'XRP', 
         address: '0x0000000000000000000000000000000000000000', // Native token
         decimals: 18,
-        logo: '/images/tokens/xrp.png',
+        logo: '/rootscan-logo.png',
       },
       {
         symbol: 'GAME',
         address: '0x...', // Replace with actual game token address
         decimals: 18,
-        logo: '/images/tokens/game.png',
+        logo: '/GAME ROOT.png',
       },
       // Add more supported tokens as needed
     ],

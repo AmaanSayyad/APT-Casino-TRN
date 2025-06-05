@@ -177,7 +177,7 @@ export function useTRN() {
   /**
    * Send a transaction with a specific gas token
    */
-  const sendTransaction = useCallback(async (txParams, gasToken = 'ROOT') => {
+  const sendTransaction = useCallback(async (txParams, gasToken = 'XRP') => {
     if (!isConnected) {
       throw new Error('Wallet not connected');
     }

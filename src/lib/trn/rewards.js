@@ -1,3 +1,5 @@
+"use client";
+
 import { TRN_CONFIG, GAME_REWARDS } from './config';
 import { futurePassWallet } from './futurePass';
 import { nftManager } from './nft';
@@ -214,8 +216,8 @@ export class RewardsSystem {
         value: '0',
       };
       
-      // Send transaction using ROOT token for gas
-      const txHash = await futurePassWallet.sendTransaction(txParams, 'ROOT');
+      // Send transaction using XRP token for gas
+      const txHash = await futurePassWallet.sendTransaction(txParams, 'XRP');
       
       // Update user's total rewards
       this.userStats[userAddress].totalRewards = (
@@ -241,7 +243,7 @@ export class RewardsSystem {
       const { tokenURI, rarity } = await nftManager.generateRandomNFTReward();
       
       // Mint the NFT for the user
-      const nftDetails = await nftManager.mintRewardNFT(tokenURI, rarity, 'ROOT');
+      const nftDetails = await nftManager.mintRewardNFT(tokenURI, rarity, 'XRP');
       
       return nftDetails;
     } catch (error) {

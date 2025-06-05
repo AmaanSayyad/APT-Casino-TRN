@@ -150,7 +150,7 @@ export class FuturePassWallet {
    * @param {string} gasToken Token to use for gas payment (from supported tokens)
    * @returns {Promise<string>} Transaction hash
    */
-  async sendTransaction(txParams, gasToken = 'ROOT') {
+  async sendTransaction(txParams, gasToken = 'XRP') {
     if (!this.isConnected) {
       throw new Error('Wallet not connected');
     }
