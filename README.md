@@ -1,97 +1,146 @@
-# APT Casino on TRN Network
+# BetBlock - Decentralized Gaming on TRN Network
 
-This project is an implementation of APT Casino on TRN Network for the TRN Game Forge track.
+![BetBlock Logo](public/images/logo.png)
 
-## TRN Integration Features
+BetBlock is a revolutionary decentralized gaming platform built on TRN Network that combines GameFi and DeFi into a transparent, fair, and engaging user experience. Our mission is to provide a safe, secure, and transparent multiplayer platform that respects its users while delivering immersive gaming experiences.
 
-This casino application leverages the following TRN Network features:
+## 🌟 The Origin Story
 
-### 1. Fee Pallets (Multi-Token Gas Economy)
+BetBlock was born out of a real experience with traditional gambling platforms. One of our team members encountered a deceptive "200% bonus" offer on a centralized casino platform that came with hidden wager requirements, making it nearly impossible to withdraw funds. After losing their deposit due to these hidden terms, they were inspired to create something better.
 
-- Pay transaction fees with different tokens (ROOT or GAME tokens)
-- Users can select which token to use for gas fees
-- Seamless transaction experience with any supported token
+BetBlock aims to solve this problem by leveraging blockchain technology to ensure complete transparency, fairness, and true ownership for all players.
 
-### 2. NFT & Collectibles Pallets
+## 🎮 Core Features
 
-- In-game NFT rewards for achievements and wins
-- Different rarity levels of NFTs with special properties
-- NFT items that provide in-game boosts and advantages
-- On-chain ownership of game assets
+### Transparent GameFi
+- **100% On-Chain Games**: Every game action and outcome is recorded on the blockchain for full transparency
+- **Verifiable Randomness**: Using TRN's robust random number generation to ensure fair outcomes
+- **No Hidden Terms**: All game rules, odds, and house edges are transparent and verifiable
 
-### 3. FuturePass Wallet Integration
+### Innovative DeFi Integration
+- **Multi-Token Gas Economy**: Pay transaction fees with different tokens (ROOT or GAME tokens)
+- **NFT Rewards System**: Earn collectible NFTs with real utility in the BetBlock ecosystem
+- **FuturePass Wallet Integration**: Seamless, user-friendly wallet experience
 
-- Seamless wallet connection using FuturePass
-- User-friendly login and transaction flow
-- Secure and simplified gaming experience
-- View and manage game assets directly in the app
+### AI-Enhanced Gaming
+- **Personalized Experiences**: AI-driven features create customized gaming journeys
+- **NFT Profile Pictures**: Generate unique profile NFTs using AI
+- **Community Leaderboards**: Track your standing and explore other players' achievements
 
-### 4. Game Rewards System
+## 🎲 Available Games
 
-- Earn GAME tokens for playing and winning
-- Daily rewards for active players
-- Achievement system with token and NFT rewards
-- On-chain reward mechanics and incentives
+- **Roulette**: Classic European roulette with various betting options
+- **Plinko**: Arcade-style game of chance with adjustable risk levels
+- **Mines**: Strategic risk-management game with increasing rewards
+- *More games coming soon!*
 
-## Smart Contracts
+## 💰 Tokenomics
 
-The project includes the following TRN-compatible smart contracts:
+- **$GAME Token**: The primary utility token of the BetBlock ecosystem
+- **NFT Collectibles**: Rare, tradable assets that provide in-game advantages
+- **Daily Rewards**: Earn tokens and NFTs through active participation
+- **Achievement System**: Complete challenges to earn special rewards
 
-1. **GameToken.sol**: ERC20 token for in-game rewards
-2. **GameNFT.sol**: ERC721 token for in-game NFT rewards
-3. **Treasury.sol**: Manages game tokens and NFTs
+## 🔧 Technology Stack
 
-These contracts support TRN's multi-token gas economy through the `setGasToken` function.
+- **Blockchain**: TRN Network for efficient, low-cost transactions
+- **Smart Contracts**: Solidity for core game logic
+- **Wallet Integration**: FuturePass wallet for seamless user experience
+- **Fee Structure**: Multi-token gas economy for flexible transaction fee payment
+- **Frontend**: Next.js, React, and TailwindCSS for a responsive user interface
 
-## Architecture
+## 🚀 Roadmap
 
-The application is built with the following architecture:
+### Phase 1: Foundation (Current)
+- TRN Network integration
+- Core game development (Roulette, Plinko, Mines)
+- FuturePass wallet integration
+- NFT rewards system
 
-1. **Frontend**: Next.js application with React components
-2. **Blockchain Integration**: TRN Network integration with FuturePass wallet
-3. **Smart Contracts**: Solidity contracts deployed on TRN Network
-4. **Game Logic**: Casino games with token rewards and NFT drops
+### Phase 2: Expansion
+- Additional games (Blackjack, Slots, Poker)
+- Enhanced NFT utility
+- Cross-chain compatibility
+- Community tournaments
 
-## Getting Started
+### Phase 3: Ecosystem
+- DAO governance implementation
+- Developer SDK for third-party game integration
+- Mobile applications
+- Advanced AI features
+
+## 🔒 Security & Fairness
+
+At BetBlock, we prioritize security and fairness:
+
+- All smart contracts are audited for security vulnerabilities
+- Game outcomes are verifiable on-chain
+- Random number generation is truly random and tamper-proof
+- All fees and house edges are transparent and reasonable
+
+## 💼 Business Model
+
+BetBlock operates on a sustainable business model:
+
+- Small house edge on games (1-3%)
+- NFT marketplace fees
+- Premium features and tournaments
+- Community-driven development
+
+## 🌐 Community & Governance
+
+BetBlock is community-centric:
+
+- Active Discord and Telegram communities
+- Regular updates and transparent development
+- Future DAO governance for platform decisions
+- Community rewards for active participation
+
+## 📋 Getting Started
+
+To start using BetBlock:
+
+1. Visit our platform at [betblock.trn](https://betblock.trn)
+2. Connect your FuturePass wallet
+3. Claim your daily rewards
+4. Play games and earn tokens and NFTs
+5. Join our community to stay updated
+
+## 🧪 Development
 
 ### Prerequisites
-
 - Node.js (v18 or later)
-- Yarn or npm
+- npm or yarn
 
 ### Installation
 
-1. Clone the repository
-   ```
-   git clone https://github.com/your-username/apt-casino-trn.git
-   cd apt-casino-trn
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/betblock.git
 
-2. Install dependencies
-   ```
-   npm install
-   ```
+# Install dependencies
+cd betblock
+npm install
 
-3. Start the development server
-   ```
-   npm run dev
-   ```
+# Start the development server
+npm run dev
+```
 
-4. Open your browser and navigate to `http://localhost:3000`
+## 🤝 Contributing
 
-## Deployment
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more information.
 
-To deploy the application and smart contracts to TRN Network:
+## 📄 License
 
-1. Update the TRN configuration in `src/lib/trn/config.js` with actual values
-2. Deploy the smart contracts using the deployment script
-   ```
-   cd web3-contracts
-   npx hardhat run scripts/deploy_trn.js --network trn
-   ```
-3. Update the contract addresses in the configuration file
-4. Build and deploy the frontend application
+BetBlock is licensed under the [MIT License](LICENSE).
 
-## License
+## 📞 Contact
 
-This project is licensed under the MIT License. 
+- Website: [betblock.trn](https://betblock.trn)
+- Email: team@betblock.trn
+- Discord: [BetBlock Community](https://discord.gg/betblock)
+- Twitter: [@BetBlockTRN](https://twitter.com/BetBlockTRN)
+
+---
+
+Built with ❤️ by the BetBlock Team on TRN Network 
